@@ -20,6 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/ch04Activity/ActivityLifeCycle/layout',
+                    'src/main/res/layout/ch04Activity/ActivityLifeCycle',
+                    'src/main/res/layout/ch04Activity',
+                    'src/main/res/layout',
+                    'src/main/res',
+            ]
+        }
+    }
 }
 
 dependencies {
