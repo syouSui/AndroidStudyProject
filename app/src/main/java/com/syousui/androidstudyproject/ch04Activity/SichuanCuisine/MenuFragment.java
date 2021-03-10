@@ -29,19 +29,25 @@ public class MenuFragment extends Fragment {
         foodDescription = activity.getFoodDescription();
 
         View view = inflater.inflate(R.layout.fragment_menu, container, false);
+
         ListView menuListView = (ListView) view.findViewById(R.id.menulist);
         menuListView.setAdapter(new MyAdapter());
         menuListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                ((ContentFragment) ((FoodMainActivity) getActivity()).getSupportFragmentManager().findFragmentById(R.id.food_description))
-                        .setText(foodDescription[i]);
+                (
+                        (ContentFragment) ((FoodMainActivity) getActivity())
+                                .getSupportFragmentManager()
+                                .findFragmentById(R.id.food_description)
+                ).setText(foodDescription[i]);
             }
         });
         return view;
     }
 
-    //适配器
+    /**
+     * Data Adapter for ListView
+     */
     class MyAdapter extends BaseAdapter {
         @Override
         public int getCount() {
