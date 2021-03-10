@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.syousui.androidstudyproject.ch04Activity.activitylifecycle.ActivityLifeCycle" />
+        <activity android:name="com.syousui.androidstudyproject.ch04Activity.SichuanCuisine.FoodMainActivity" />
     </application>
 
 </manifest>

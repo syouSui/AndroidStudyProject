@@ -26,6 +26,10 @@ android {
             res.srcDirs = [
                     'src/main/res/layout/ch04Activity/ActivityLifeCycle/layout',
                     'src/main/res/layout/ch04Activity/ActivityLifeCycle',
+                    'src/main/res/layout/ch04Activity/SichuanCuisine/layout',
+                    'src/main/res/layout/ch04Activity/SichuanCuisine',
+                    'src/main/res/drawable/ch04Activity/SichuanCuisine/drawable',
+                    'src/main/res/drawable/ch04Activity/SichuanCuisine',
                     'src/main/res/layout/ch04Activity',
                     'src/main/res/layout',
                     'src/main/res',
