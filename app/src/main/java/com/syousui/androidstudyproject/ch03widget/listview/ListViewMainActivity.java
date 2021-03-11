@@ -23,7 +23,7 @@ public class ListViewMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_listview);
-        ListView mListView = (ListView) findViewById(R.id.lv);
+        ListView mListView =  findViewById(R.id.lv_lv);
         mListView.setAdapter(new MyBaseAdapter());
     }
 
@@ -60,9 +60,9 @@ public class ListViewMainActivity extends Activity {
             ViewHolder holder = new ViewHolder();
             if (convertView == null) {
                 convertView = View.inflate(ListViewMainActivity.this, R.layout.list_item, null);
-                holder.title = (TextView) convertView.findViewById(R.id.title);
-                holder.price = (TextView) convertView.findViewById(R.id.price);
-                holder.iv = (ImageView) convertView.findViewById(R.id.iv);
+                holder.title = convertView.findViewById(R.id.lv_title);
+                holder.price = convertView.findViewById(R.id.lv_price);
+                holder.iv = convertView.findViewById(R.id.iv);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
