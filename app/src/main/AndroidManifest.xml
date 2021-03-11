@@ -15,9 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.syousui.androidstudyproject.ch04Activity.activitylifecycle.ActivityLifeCycle" />
-        <activity android:name="com.syousui.androidstudyproject.ch04Activity.SichuanCuisine.FoodMainActivity" />
-        <activity android:name="com.syousui.androidstudyproject.ch03Widget.ListView.ListViewMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch04activity.activitylifecycle.ActivityLifeCycle" />
+        <activity android:name="com.syousui.androidstudyproject.ch04activity.sichuancuisine.FoodMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity" />
     </application>
 
 </manifest>

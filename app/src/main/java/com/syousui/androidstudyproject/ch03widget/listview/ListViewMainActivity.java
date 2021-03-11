@@ -1,4 +1,4 @@
-package com.syousui.androidstudyproject.ch03Widget.ListView;
+package com.syousui.androidstudyproject.ch03widget.listview;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.syousui.androidstudyproject.R;
+
 
 public class ListViewMainActivity extends Activity {
     private String[] titles = {"桌子", "苹果", "蛋糕", "线衣", "猕猴桃", "围巾", "desk", "apple", "cake", "clothes", "monkey peach", "neck"};

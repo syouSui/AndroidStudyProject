@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.syousui.androidstudyproject.ch03Widget.ListView.ListViewMainActivity;
-import com.syousui.androidstudyproject.ch04Activity.SichuanCuisine.FoodMainActivity;
+import com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.syousui.androidstudyproject.ch04Activity.activitylifecycle;
+package com.syousui.androidstudyproject.ch04activity.activitylifecycle;
 
 import android.os.Bundle;
 import android.util.Log;

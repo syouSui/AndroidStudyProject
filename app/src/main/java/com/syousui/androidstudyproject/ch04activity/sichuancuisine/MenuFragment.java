@@ -1,4 +1,4 @@
-package com.syousui.androidstudyproject.ch04Activity.SichuanCuisine;
+package com.syousui.androidstudyproject.ch04activity.sichuancuisine;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

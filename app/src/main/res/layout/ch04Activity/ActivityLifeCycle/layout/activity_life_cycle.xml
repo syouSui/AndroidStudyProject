@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.syousui.androidstudyproject.ch04Activity.activitylifecycle.ActivityLifeCycle">
+    tools:context="com.syousui.androidstudyproject.ch04activity.activitylifecycle.ActivityLifeCycle">
 
     <TextView
         android:id="@+id/activityLifeCycle_tv"

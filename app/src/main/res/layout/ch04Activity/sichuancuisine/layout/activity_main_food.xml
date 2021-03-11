@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false" android:orientation="horizontal"
-    tools:context="com.syousui.androidstudyproject.ch04Activity.activitylifecycle.FoodMainActivity" >
+    tools:context="com.syousui.androidstudyproject.ch04activity.activitylifecycle.FoodMainActivity" >
     <FrameLayout
         android:id="@+id/menu"
         android:layout_weight="1"
