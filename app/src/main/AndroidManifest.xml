@@ -17,6 +17,7 @@
         </activity>
         <activity android:name="com.syousui.androidstudyproject.ch04Activity.activitylifecycle.ActivityLifeCycle" />
         <activity android:name="com.syousui.androidstudyproject.ch04Activity.SichuanCuisine.FoodMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch03Widget.ListView.ListViewMainActivity" />
     </application>
 
 </manifest>
