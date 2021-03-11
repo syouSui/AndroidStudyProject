@@ -26,9 +26,13 @@ android {
             res.srcDirs = [
                     'src/main/res/layout/ch03widget/listview/layout',
                     'src/main/res/layout/ch03widget/listview',
+                    'src/main/res/layout/ch03widget/recycleview/layout',
+                    'src/main/res/layout/ch03widget/recycleview',
                     'src/main/res/layout/ch03widget',
                     'src/main/res/drawable/ch03widget/listview/drawable',
                     'src/main/res/drawable/ch03widget/listview',
+                    'src/main/res/drawable/ch03widget/recycleview/drawable',
+                    'src/main/res/drawable/ch03widget/recycleview',
                     'src/main/res/drawable/ch03widget',
 
                     'src/main/res/layout/ch04activity/activitylifecycle/layout',
@@ -54,6 +58,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

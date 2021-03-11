@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity;
+import com.syousui.androidstudyproject.ch03widget.recycleview.RecycleViewMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        startActivity(new Intent(this, ActivityLifeCycle.class));
 //        startActivity(new Intent(this, FoodMainActivity.class));
-        startActivity(new Intent(this, ListViewMainActivity.class));
+//        startActivity(new Intent(this, ListViewMainActivity.class));
+        startActivity(new Intent(this, RecycleViewMainActivity.class));
     }
 }
