@@ -28,6 +28,8 @@ android {
                     'src/main/res/layout/ch03widget/listview',
                     'src/main/res/layout/ch03widget/recycleview/layout',
                     'src/main/res/layout/ch03widget/recycleview',
+                    'src/main/res/layout/ch03widget/customview/layout',
+                    'src/main/res/layout/ch03widget/customview',
                     'src/main/res/layout/ch03widget',
                     'src/main/res/drawable/ch03widget/listview/drawable',
                     'src/main/res/drawable/ch03widget/listview',

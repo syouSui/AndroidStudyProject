@@ -19,6 +19,7 @@
         <activity android:name="com.syousui.androidstudyproject.ch04activity.sichuancuisine.FoodMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.recycleview.RecycleViewMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch03widget.custom.CustomViewMainActivity" />
     </application>
 
 </manifest>
