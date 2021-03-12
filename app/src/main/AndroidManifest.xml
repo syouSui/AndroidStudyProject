@@ -20,6 +20,7 @@
         <activity android:name="com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.recycleview.RecycleViewMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.custom.CustomViewMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch03widget.dialog.DialogMainActivity" />
     </application>
 
 </manifest>

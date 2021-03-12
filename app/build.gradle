@@ -24,6 +24,8 @@ android {
     sourceSets {
         main {
             res.srcDirs = [
+                    'src/main/res/layout/ch03widget/dialog/layout',
+                    'src/main/res/layout/ch03widget/dialog',
                     'src/main/res/layout/ch03widget/listview/layout',
                     'src/main/res/layout/ch03widget/listview',
                     'src/main/res/layout/ch03widget/recycleview/layout',
