@@ -40,12 +40,9 @@ public class FoodMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_food);
 
-        ContentFragment contentFragment = new ContentFragment();
-        MenuFragment menuFragment = new MenuFragment();
-
         FragmentTransaction beginTransaction = getSupportFragmentManager().beginTransaction();
-        beginTransaction.replace(R.id.food_description, contentFragment);
-        beginTransaction.replace(R.id.menu, menuFragment);
+        beginTransaction.replace(R.id.food_description, new ContentFragment());
+        beginTransaction.replace(R.id.menu, new MenuFragment() );
         beginTransaction.commit();
     }
 }
