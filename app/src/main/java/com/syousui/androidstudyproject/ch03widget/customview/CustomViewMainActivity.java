@@ -1,4 +1,4 @@
-package com.syousui.androidstudyproject.ch03widget.custom;
+package com.syousui.androidstudyproject.ch03widget.customview;
 
 import android.os.Bundle;
 
