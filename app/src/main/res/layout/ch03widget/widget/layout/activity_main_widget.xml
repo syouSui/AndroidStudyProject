@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please choose your hobbies:"
+                android:textColor="#FF8000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/w_like_shuttlecock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="badminton"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/w_like_pingpong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pingpong"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/w_like_basketball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="basketball"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The hobyies you choosed is: "
+                android:textColor="#FF8000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/w_hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/w_rdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/w_rdg_manbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/w_rdg_femalebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="25dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/w_rdg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

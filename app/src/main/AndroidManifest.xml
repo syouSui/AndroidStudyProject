@@ -21,6 +21,7 @@
         <activity android:name="com.syousui.androidstudyproject.ch03widget.recycleview.RecycleViewMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.customview.CustomViewMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.dialog.DialogMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch03widget.widget.WidgetMainActivity" />
     </application>
 
 </manifest>

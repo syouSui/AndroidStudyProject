@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.syousui.androidstudyproject.ch03widget.dialog.DialogMainActivity;
+import com.syousui.androidstudyproject.ch03widget.widget.WidgetMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(new Intent(this, ListViewMainActivity.class));
 //        startActivity(new Intent(this, RecycleViewMainActivity.class));
 //        startActivity(new Intent(this, CustomViewMainActivity.class));
-        startActivity(new Intent(this, DialogMainActivity.class));
+//        startActivity(new Intent(this, DialogMainActivity.class));
+        startActivity(new Intent(this, WidgetMainActivity.class));
     }
 }
