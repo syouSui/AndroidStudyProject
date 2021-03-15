@@ -23,14 +23,36 @@ public class ListViewMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_listview);
-        ListView mListView =  findViewById(R.id.lv_lv);
-        mListView.setAdapter(new MyBaseAdapter());
+        ListView mListView = findViewById(R.id.lv_lv);
+        mListView.setAdapter(new MyBaseAdapter(this.titles, this.prices, this.icons));
     }
 
     /**
      * Data Adapter Class
      */
     class MyBaseAdapter extends BaseAdapter {
+        private String[] titles;
+        private String[] prices;
+        private int[] icons;
+
+        public MyBaseAdapter() {
+        }
+
+        public MyBaseAdapter(String[] titles, String[] prices, int[] icons) {
+            this.titles = titles;
+            this.prices = prices;
+            this.icons = icons;
+        }
+
+        /**
+         * View Holder Class
+         */
+        class MyViewHolder {
+            TextView title;
+            TextView price;
+            ImageView iv;
+        }
+
         @Override
         public int getCount() {
             return titles.length;
@@ -48,24 +70,21 @@ public class ListViewMainActivity extends Activity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-//            View view = View.inflate(MainActivity.this, R.layout.list_item, null);
-//            TextView title = (TextView) view.findViewById(R.id.title);
-//            TextView price = (TextView) view.findViewById(R.id.price);
-//            ImageView iv = (ImageView) view.findViewById(R.id.iv);
-//            title.setText(titles[position]);
-//            price.setText(prices[position]);
-//            iv.setBackgroundResource(icons[position]);
+//            View view = View.inflate(ListViewMainActivity.this, R.layout.list_item, null);
+//            ((TextView) view.findViewById(R.id.lv_title)).setText(titles[position]);
+//            ((TextView) view.findViewById(R.id.lv_price)).setText(prices[position]);
+//            ((ImageView) view.findViewById(R.id.lv_iv)).setBackgroundResource(icons[position]);
 //            return view;
 
-            ViewHolder holder = new ViewHolder();
+            MyViewHolder holder = new MyViewHolder();
             if (convertView == null) {
                 convertView = View.inflate(ListViewMainActivity.this, R.layout.list_item, null);
                 holder.title = convertView.findViewById(R.id.lv_title);
                 holder.price = convertView.findViewById(R.id.lv_price);
-                holder.iv = convertView.findViewById(R.id.iv);
+                holder.iv = convertView.findViewById(R.id.lv_iv);
                 convertView.setTag(holder);
             } else {
-                holder = (ViewHolder) convertView.getTag();
+                holder = (MyViewHolder) convertView.getTag();
             }
             holder.title.setText(titles[position]);
             holder.price.setText(prices[position]);
@@ -73,14 +92,5 @@ public class ListViewMainActivity extends Activity {
             return convertView;
         }
 
-    }
-
-    /**
-     * View Holder Class
-     */
-    static class ViewHolder {
-        TextView title;
-        TextView price;
-        ImageView iv;
     }
 }

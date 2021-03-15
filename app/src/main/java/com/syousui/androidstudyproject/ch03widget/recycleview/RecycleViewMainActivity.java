@@ -42,34 +42,24 @@ public class RecycleViewMainActivity extends AppCompatActivity {
         this.setContentView(R.layout.activity_main_recycleview);
         RecyclerView mRecyclerView = findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.setAdapter(new HomeAdapter());
+        mRecyclerView.setAdapter(new MyAdapter(this.names, this.images, this.introduces));
     }
-
 
     /**
      * HomeAdapter
      */
-    class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
-        @NonNull
-        @Override
-        public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new MyViewHolder(
-                    LayoutInflater
-                            .from(RecycleViewMainActivity.this)
-                            .inflate(R.layout.recycler_item, parent, false)
-            );
+    class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+        private String[] names;
+        private int[] images;
+        private String[] introduces;
+
+        public MyAdapter() {
         }
 
-        @Override
-        public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-            holder.nameView.setText(names[position]);
-            holder.imageView.setImageResource(images[position]);
-            holder.introduceView.setText(introduces[position]);
-        }
-
-        @Override
-        public int getItemCount() {
-            return names.length;
+        public MyAdapter(String[] names, int[] images, String[] introduces) {
+            this.names = names;
+            this.images = images;
+            this.introduces = introduces;
         }
 
         /**
@@ -86,6 +76,27 @@ public class RecycleViewMainActivity extends AppCompatActivity {
                 this.imageView = view.findViewById(R.id.rv_image);
                 this.introduceView = view.findViewById(R.id.rv_introduce);
             }
+        }
+
+        @NonNull
+        @Override
+        public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            return new MyViewHolder(
+                    LayoutInflater.from(RecycleViewMainActivity.this)
+                            .inflate(R.layout.recycler_item, parent, false)
+            );
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+            holder.nameView.setText(names[position]);
+            holder.imageView.setImageResource(images[position]);
+            holder.introduceView.setText(introduces[position]);
+        }
+
+        @Override
+        public int getItemCount() {
+            return names.length;
         }
     }
 }
