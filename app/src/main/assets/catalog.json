@@ -1,7 +1,7 @@
 {
   "chapter": [
     {
-      "chapter_name": "ONE",
+      "chapter_name": "Chapter1 Concept",
       "section": [
         {
           "section_name": "1.1 sfasfsfs",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "chapter_name": "TWO",
+      "chapter_name": "Chapter2 Layout",
       "section": [
         {
           "section_name": "2.1 sfasfsfs",
@@ -31,6 +31,40 @@
         {
           "section_name": "2.3 fdgfdgdfgd",
           "section_activity": "fddfdfgdfsg"
+        }
+      ]
+    },
+    {
+      "chapter_name": "Chapter3 Widget",
+      "section": [
+        {
+          "section_name": "3.1 Dialog",
+          "section_activity": "com.syousui.androidstudyproject.ch03widget.dialog.DialogMainActivity"
+        },
+        {
+          "section_name": "3.2 ListView",
+          "section_activity": "com.syousui.androidstudyproject.ch03widget.listview.ListViewMainActivity"
+        },
+        {
+          "section_name": "3.3 RecycleView",
+          "section_activity": "com.syousui.androidstudyproject.ch03widget.recycleview.RecycleViewMainActivity"
+        },
+        {
+          "section_name": "3.3 CustomView",
+          "section_activity": "com.syousui.androidstudyproject.ch03widget.customview.CustomViewMainActivity"
+        }
+      ]
+    },
+    {
+      "chapter_name": "Chapter4 Activity",
+      "section": [
+        {
+          "section_name": "4.1 ActivityLifeCycle",
+          "section_activity": "com.syousui.androidstudyproject.ch04activity.activitylifecycle.ActivityLifeCycle"
+        },
+        {
+          "section_name": "4.2 SichuanCuisine",
+          "section_activity": "com.syousui.androidstudyproject.ch04activity.sichuancuisine.FoodMainActivity"
         }
       ]
     }

@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.syousui.androidstudyproject.util.JSONUtil;
@@ -24,13 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        startActivity(new Intent(this, ActivityLifeCycle.class));
-//        startActivity(new Intent(this, FoodMainActivity.class));
-//        startActivity(new Intent(this, ListViewMainActivity.class));
-//        startActivity(new Intent(this, RecycleViewMainActivity.class));
-//        startActivity(new Intent(this, CustomViewMainActivity.class));
-//        startActivity(new Intent(this, DialogMainActivity.class));
-//        startActivity(new Intent(this, WidgetMainActivity.class));
         RecyclerView contentView = findViewById(R.id.chapter);
         contentView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
         contentView.setAdapter(new MyAdapterV1(
@@ -76,12 +71,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull MyViewHolderV1 holder, int position) {
+        public void onBindViewHolder(@NonNull final MyViewHolderV1 holder, int position) {
             try {
                 JSONObject chapter_item = chapter.getJSONObject(position);
                 holder.chapterNameTextView.setText(
                         chapter_item.getString("chapter_name")
                 );
+                holder.chapterNameTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        holder.sectionRecycleView.setVisibility(
+                                holder.sectionRecycleView.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE
+                        );
+                    }
+                });
                 holder.sectionRecycleView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
                 holder.sectionRecycleView.setAdapter(new MyAdapterV2(
                                 chapter_item.getJSONArray("section")
@@ -132,10 +135,21 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapterV2.MyViewHolderV2 holder, int position) {
             try {
-                JSONObject section_item = section.getJSONObject(position);
+                final JSONObject section_item = section.getJSONObject(position);
                 holder.sectionNameTextView.setText(
                         section_item.getString("section_name")
                 );
+                holder.sectionNameTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            Class clazz = Class.forName(section_item.getString("section_activity"));
+                            startActivity(new Intent(MainActivity.this, clazz));
+                        } catch (ClassNotFoundException | JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -147,14 +161,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
-//            JSONArray chapter = temp.getJSONArray("chapter");
-//            JSONObject chapter_item = chapter.getJSONObject(0);
-//            String chapter_name = chapter_item.getString("chapter_name");
-//            JSONArray section = chapter_item.getJSONArray("section");
-//            JSONObject section_item = section.getJSONObject(0);
-//            String section_name = section_item.getString("section_name");
-//            String section_activity = section_item.getString("section_activity");
-//            System.out.println(chapter_name);
-//            System.out.println(section_name);
-//            System.out.println(section_activity);
+/*
+ * TODO:
+ * 1. 自动更新
+ * 2. 隐藏顶部状态栏
+ */
