@@ -4,14 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/chapter_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
         android:text="chapter_name"
+        android:textColor="#662CCF"
+        android:textFontWeight="900"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="16dp" />
 

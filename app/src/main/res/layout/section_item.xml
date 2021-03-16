@@ -8,6 +8,9 @@
         android:id="@+id/section_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="section_name" />
+        android:layout_marginStart="100dp"
+        android:gravity="center_vertical"
+        android:text="section_name"
+        android:textFontWeight="600"
+        android:textSize="18sp" />
 </LinearLayout>
