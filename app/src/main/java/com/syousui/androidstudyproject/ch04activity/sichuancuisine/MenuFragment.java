@@ -50,7 +50,7 @@ public class MenuFragment extends Fragment {
 
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
-                convertView = View.inflate(MenuFragment.this.getActivity(), R.layout.item_list, null);
+                convertView = View.inflate(MenuFragment.this.getActivity(), R.layout.fragment_menu_item_list, null);
                 ((ImageView) convertView.findViewById(R.id.food_icon)).setBackgroundResource(foodIcons[position]);
                 ((TextView) convertView.findViewById(R.id.food_name)).setText(foodNames[position]);
                 return convertView;

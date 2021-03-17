@@ -30,7 +30,7 @@
             android:textSize="20sp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/lv_title"
-            android:textColor="#FF8F03" />
+            android:textColor="@color/colorPrimary" />
         <TextView
             android:id="@+id/lv_price"
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:textSize="20sp"
             android:layout_below="@+id/lv_title"
             android:layout_toRightOf="@+id/lv_tv_price"
-            android:textColor="#FF8F03"
+            android:textColor="@color/colorPrimary"
             android:layout_marginTop="10dp"/>
     </RelativeLayout>
 </RelativeLayout>
