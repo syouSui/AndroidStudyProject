@@ -51,6 +51,13 @@ android {
                     'src/main/res/drawable/ch04activity/sichuancuisine',
                     'src/main/res/drawable/ch04activity',
 
+                    'src/main/res/layout/ch05datastorage/saveqq/layout',
+                    'src/main/res/layout/ch05datastorage/saveqq',
+                    'src/main/res/layout/ch05datastorage',
+                    'src/main/res/drawable/ch05DataStorage/saveqq/drawable',
+                    'src/main/res/drawable/ch05DataStorage/saveqq',
+                    'src/main/res/drawable/ch05DataStorage',
+
                     'src/main/res/drawable',
                     'src/main/res/layout',
 
