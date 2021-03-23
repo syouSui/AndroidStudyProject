@@ -23,6 +23,7 @@
         <activity android:name="com.syousui.androidstudyproject.ch03widget.dialog.DialogMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch03widget.widget.WidgetMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch05DataStorage.saveqq.SaveQQMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch05DataStorage.contacts.ContactsMainActivity" />
     </application>
 
 </manifest>

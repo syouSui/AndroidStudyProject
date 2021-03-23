@@ -53,9 +53,13 @@ android {
 
                     'src/main/res/layout/ch05datastorage/saveqq/layout',
                     'src/main/res/layout/ch05datastorage/saveqq',
+                    'src/main/res/layout/ch05datastorage/contacts/layout',
+                    'src/main/res/layout/ch05datastorage/contacts',
                     'src/main/res/layout/ch05datastorage',
                     'src/main/res/drawable/ch05DataStorage/saveqq/drawable',
                     'src/main/res/drawable/ch05DataStorage/saveqq',
+                    'src/main/res/drawable/ch05DataStorage/contacts/drawable',
+                    'src/main/res/drawable/ch05DataStorage/contacts',
                     'src/main/res/drawable/ch05DataStorage',
 
                     'src/main/res/drawable',

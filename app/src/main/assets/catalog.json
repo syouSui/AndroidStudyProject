@@ -61,7 +61,7 @@
         },
         {
           "section_name": "5.2 MungBeanContacts",
-          "section_activity": "com.syousui.androidstudyproject.ch04activity.mungbeancontacts.MungBeanContactsMainActivit"
+          "section_activity": "com.syousui.androidstudyproject.ch05DataStorage.contacts.ContactsMainActivity"
         }
       ]
     },
