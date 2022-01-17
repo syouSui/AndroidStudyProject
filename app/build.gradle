@@ -62,6 +62,11 @@ android {
                     'src/main/res/drawable/ch05DataStorage/contacts',
                     'src/main/res/drawable/ch05DataStorage',
 
+                    'src/main/res/layout/ch06notepad/layout',
+                    'src/main/res/layout/ch06notepad',
+                    'src/main/res/drawable/ch06notepad/drawable',
+                    'src/main/res/drawable/ch06notepad',
+
                     'src/main/res/drawable',
                     'src/main/res/layout',
 

@@ -70,7 +70,7 @@
       "section": [
         {
           "section_name": "6.1 Notepad",
-          "section_activity": "com.syousui.androidstudyproject.ch04activity.activitylifecycle.ActivityLifeCycle"
+          "section_activity": "com.syousui.androidstudyproject.ch06notepad.NotepadMainActivity"
         }
       ]
     },

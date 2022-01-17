@@ -24,6 +24,8 @@
         <activity android:name="com.syousui.androidstudyproject.ch03widget.widget.WidgetMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch05DataStorage.saveqq.SaveQQMainActivity" />
         <activity android:name="com.syousui.androidstudyproject.ch05DataStorage.contacts.ContactsMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch06notepad.NotepadMainActivity" />
+        <activity android:name="com.syousui.androidstudyproject.ch06notepad.RecordActivity" />
     </application>
 
 </manifest>
